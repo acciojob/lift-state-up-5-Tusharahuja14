@@ -8,16 +8,15 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // For test, no actual validation is needed
+    // No actual validation needed
     setIsLoggedIn(true);
   };
 
   return (
     <div>
-      {/* Do not remove the main div */}
+      
       {isLoggedIn ? (
-      <h1>Parent Component</h1>  // instead of Lift State Up Demo
-
+        <h1>Parent Component</h1>
       ) : (
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
