@@ -16,7 +16,8 @@ const App = () => {
     <div>
       {/* Do not remove the main div */}
       {isLoggedIn ? (
-        <h1>Parent Component</h1>
+      <h1>Parent Component</h1>  // instead of Lift State Up Demo
+
       ) : (
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
